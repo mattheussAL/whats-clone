@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #D2DBDC;
+}
+
+.app-window {
+  display: flex;
+  height: 100vh;
+
+  background: #EDEDED;
+}
+
+.sidebar {
+  width: 35%;
+  max-width: 415px;
+
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #DDD;
+}
+
+header {
+  height: 60px;  
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 15px;
+}
+
+header .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+
+  cursor: pointer;
+}
+
+header .buttons {
+  display: flex;
+}
+
+header .buttons .header-btn {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.search {
+  background: #F6F6F6;
+  border-bottom: 1px solid #EEE;
+
+  padding: 5px;
+}
+
+.search .input {
+  background: #FFF;
+  height: 40px;
+
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.search .input input {
+  flex: 1;
+  border: none;
+  outline: none;
+
+  background: transparent;
+  margin-left: 10px;
+}
+
+.chatList {
+  flex: 1;
+  background: #FFF;
+  overflow-y: auto;
+}
+
+.chatList::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.chatList::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0, 0.2);
+}
+
+.content-area {
+  flex: 1;
+}

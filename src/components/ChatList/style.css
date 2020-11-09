@@ -1,0 +1,78 @@
+.chatList {
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.chatList:hover {
+  background: #f5f5f5;
+}
+
+.chatList.active {
+  background: #EBEBEB;
+}
+
+.chatList .avatar {
+  width: 50px;
+  height: 50px;
+
+  border-radius: 50%;
+
+  margin-left: 15px;
+}
+
+.chatLines {
+  flex: 1; /*Pega todo o espaço disponivel restante*/
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding-right: 15px;
+  height: 100%;
+  margin-left: 15px;
+
+  border-bottom: 1px solid #EEE;
+
+  flex-wrap: wrap;
+  min-width: 0;
+}
+
+.chatLines .line {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+
+  width: 100%;
+}
+
+.chatLines .line .name {
+  font-size: 17px;
+  color: #000;
+}
+
+.chatLines .line .date {
+  font-size: 17px;
+  color: #999;
+}
+
+.chatLines .line .lastMsg {
+  display: flex;
+
+  width: 100%;
+
+  font-size: 14px;
+  color: #999;
+}
+
+.chatLines .line .lastMsg p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  margin: 0;
+
+  overflow: hidden;
+}

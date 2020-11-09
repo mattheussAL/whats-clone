@@ -1,0 +1,36 @@
+/* <== Message ==> */
+.message-line {
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.message-item {
+  display: flex;
+  flex-direction: column;
+
+  padding: 3px;
+
+  max-width: 90%;
+
+  border-radius: 10px;
+
+  background: #FFF;
+  box-shadow: 0 1px 1px #CCC;
+}
+
+.message-text {
+  font-size: 14px;
+  margin: 5px 40px 5px 5px;
+}
+
+.message-data {
+  font-size: 11px;
+  text-align: right;
+
+  color: #999;
+
+  margin-right: 5px;
+  margin-top: -15px;
+  
+  height: 15px;
+}

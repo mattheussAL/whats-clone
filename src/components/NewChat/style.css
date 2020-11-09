@@ -1,0 +1,91 @@
+.NewChat {
+  position: fixed;
+
+  width: 35%;
+  max-width: 415px;
+
+  left: 0;
+  top: 0;
+  bottom: 0;
+  
+  background: #FFF;
+  border-right: 1px solid #DDD;
+
+  display: flex;
+  flex-direction: column;
+
+  transition: all .5s ease;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+
+  padding: 60px 15px 15px 15px;
+
+  background: #00BFA5;
+}
+
+.head .back {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.head .title {
+  flex: 1;
+
+  font-size: 19px;
+  font-weight: bold;
+
+  height: 42.5px;
+  line-height: 40px;
+  
+  color: #FFF;
+  margin-left: 20px;
+}
+
+.list {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.list::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.list::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, .2);
+}
+
+.list .item {
+  display: flex;
+  align-items: center;
+
+  padding: 15px;
+
+  cursor: pointer;
+}
+
+.list .item:hover {
+  background: #F5F5F5;
+}
+
+.list .item .avatar {
+  width: 50px;
+  height: 50px;
+
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.list .item .name {
+  font-size: 17px;
+  color: #000;
+}

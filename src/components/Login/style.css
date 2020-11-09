@@ -1,0 +1,52 @@
+.header-login {
+  background: #4ADF83;
+  padding: 15px;
+}
+
+.login {
+  height: 80vh;
+  margin-top: -40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login button {
+  font-size: 16px;
+  font-weight: bold;
+
+  padding: 20px;
+  
+  color: #FFF;
+  background: #4ADF83;
+
+  box-shadow: 0 10px 20px rgba(0,0,0,.08);
+
+  border: none;
+  border-radius: 20px;
+
+  cursor: pointer;
+
+  transition: background .50s;
+
+  animation: jumpButton .5s ease infinite;
+}
+
+.login button:hover {
+  background: #55c27f;
+}
+
+@keyframes jumpButton {
+  0% {
+    margin-bottom: 5px;
+  }
+
+  50% {
+    margin-bottom: 10px;
+  }
+
+  100% {
+    margin-bottom: 20px;
+  }
+}
